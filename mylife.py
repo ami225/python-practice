@@ -30,3 +30,20 @@ elif today.weekday() == 4:
 # 土日
 else:
     print("死ぬほど楽しめ！！！")
+    
+# 好きになる有名人の年齢平均
+
+agelist = [37, 35, 40, 33, 39]
+
+# 合計値を要素数でわる
+ave = sum(agelist) / len(agelist)
+# 平均値
+print(str(math.floor(ave)) + "歳あたりの方を好きになる傾向があります")
+
+# 平均値でメッセージ変える
+if ave <= 30:
+    print("若い男性がタイプです")
+elif ave <= 40:
+    print("イケオジがタイプです")
+else:
+    print("おじさんが可愛いと思うタイプです")
